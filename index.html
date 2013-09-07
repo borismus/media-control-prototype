@@ -1,0 +1,57 @@
+<!doctype html>
+<link rel="stylesheet" href="style.css"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<div id="controls">
+  <div class="prev"></div>
+  <div class="playpause"></div>
+  <div class="next"></div>
+</div>
+
+<div id="browser">
+
+  <div id="tab-strip">
+    <div data-name="google" class="google">
+      <div class="name"></div>
+      <div class="close"></div>
+    </div>
+    <div data-name="rdio" class="rdio">
+      <div class="name"></div>
+      <div class="close"></div>
+    </div>
+    <div data-name="youtube" class="youtube">
+      <div class="name"></div>
+      <div class="close"></div>
+    </div>
+    <div data-name="pandora" class="pandora">
+      <div class="name"></div>
+      <div class="close"></div>
+    </div>
+    <div data-name="download" class="download">
+      <div class="name"></div>
+      <div class="close"></div>
+    </div>
+  </div>
+
+  <div id="tab-content">
+    <div class="google visible"></div>
+    <div class="rdio">
+      <audio id="rdio-stream" src="res/rdio.mp3" controls></audio>
+    </div>
+    <div class="youtube">
+      <video id="youtube-stream" src="res/youtube.mp4" controls></video>
+    </div>
+    <div class="pandora">
+      <audio id="pandora-stream" src="res/pandora.mp3" controls></audio>
+    </div>
+    <div class="download"></div>
+  </div>
+</div>
+
+<div id="help">
+  <span class="key">[space]</span> to play/pause, <span class="key">n</span> to
+  skip ahead 10s, <span class="key">p</span> to skip back 10s.
+</div>
+
+<script src="media.js"></script>
+<script src="main.js"></script>
